@@ -510,7 +510,7 @@ CLASS lhc_Travel IMPLEMENTATION.
 
     CHECK travels IS NOT INITIAL.
 
-    SELECT SINGLE FROM ztravel_343
+    SELECT SINGLE FROM ztb_travel_2893
            FIELDS MAX( travel_id )
            INTO @DATA(lv_max_travelid).
 

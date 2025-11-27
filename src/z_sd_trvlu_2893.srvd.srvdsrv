@@ -1,0 +1,7 @@
+@EndUserText.label: 'Travel - Service Definition - Unmanaged'
+define service Z_SD_TRVLU_2893
+  provider contracts odata_v4_ui {
+  expose Z_C_TRVLU_2893   as Travel;
+  expose Z_C_BOOKNGU_2893 as Booking;
+  expose Z_C_BKSUPPU_2893 as BookingSupplement;
+}

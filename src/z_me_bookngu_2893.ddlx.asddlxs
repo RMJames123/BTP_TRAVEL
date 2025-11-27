@@ -1,0 +1,79 @@
+@Metadata.layer: #CORE
+
+@UI: { headerInfo: { typeName: 'Booking',
+                     typeNamePlural: 'Bookings',
+                     title: { type: #STANDARD,
+                              value: 'BookingId' }
+                   }
+     }
+
+annotate entity Z_C_BOOKNGU_2893 with
+{
+
+  @UI.facet: [{ id: 'Booking',
+                  label: 'Booking',
+                  purpose: #STANDARD,
+                  type: #IDENTIFICATION_REFERENCE,
+                  position: 10
+                },
+                { id: 'BookingSupplement',
+                  label: 'Booking Supplement',
+                  purpose: #STANDARD,
+                  type: #LINEITEM_REFERENCE,
+                  targetElement: '_BookingSupplement',
+                  position: 20
+                }
+               ]
+
+  @UI.hidden: true
+  BookingUuid;
+
+  @UI.hidden: true
+  TravelUuid;
+
+  @UI: { lineItem: [{ position: 10, importance: #HIGH  }],
+          identification: [{ position: 10 }]
+        }
+  BookingId;
+
+  @UI: { lineItem: [{ position: 20, importance: #HIGH  }],
+          identification: [{ position: 20 }]
+        }
+  BookingDate;
+
+  @UI: { lineItem: [{ position: 30, importance: #HIGH  }],
+          identification: [{ position: 30 }]
+        }
+  CustomerId;
+
+  @UI: { lineItem: [{ position: 40, importance: #MEDIUM  }],
+          identification: [{ position: 40 }]
+        }
+  AirlineId;
+
+  @UI: { lineItem: [{ position: 50, importance: #MEDIUM  }],
+          identification: [{ position: 50 }]
+        }
+  ConnectionId;
+
+  @UI: { lineItem: [{ position: 60, importance: #MEDIUM  }],
+          identification: [{ position: 60 }]
+        }
+  FlightDate;
+
+  @UI: { lineItem: [{ position: 70, importance: #MEDIUM  }],
+          identification: [{ position: 70 }]
+        }
+  FlightPrice;
+
+  @UI: { lineItem: [{ position: 80, importance: #HIGH  }],
+          identification: [{ position: 80 }]
+        }
+  BookingStatus;
+
+  @UI.hidden: true
+  BookingStatusText;
+
+  @UI.hidden: true
+  LocalLastChangedAt;
+}

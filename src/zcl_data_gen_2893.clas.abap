@@ -12,7 +12,9 @@ ENDCLASS.
 
 
 
-CLASS zcl_data_gen_2893 IMPLEMENTATION.
+CLASS ZCL_DATA_GEN_2893 IMPLEMENTATION.
+
+
   METHOD if_oo_adt_classrun~main.
 
     DELETE FROM ztb_travel_2893.
@@ -98,5 +100,4 @@ travel~last_changed_at AS local_last_changed_at
 
 
   ENDMETHOD.
-
 ENDCLASS.

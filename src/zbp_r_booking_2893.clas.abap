@@ -1,12 +1,4 @@
-class ZBP_R_BOOKING_2893 definition
-  public
-  abstract
-  final
-  create public .
-
-public section.
-protected section.
-private section.
+CLASS zbp_r_booking_2893 DEFINITION PUBLIC ABSTRACT FINAL FOR BEHAVIOR OF z_r_travel_2893.
 ENDCLASS.
 
 

@@ -1,11 +1,12 @@
 managed;
 strict ( 2 );
-with draft;
+with draft ;
 
 define behavior for Z_R_TRAVEL_2893 alias Travel
 implementation in class zbp_r_travel_2893 unique
 persistent table ztb_travel_2893
 draft table ztb_travel_2893d
+
 lock master
 total etag LastChangedAt
 authorization master ( global, instance )

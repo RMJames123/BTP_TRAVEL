@@ -1,12 +1,4 @@
-class ZBP_R_BKSUPPL_2893 definition
-  public
-  abstract
-  final
-  create public .
-
-public section.
-protected section.
-private section.
+CLASS zbp_r_bksuppl_2893 DEFINITION PUBLIC ABSTRACT FINAL FOR BEHAVIOR OF z_r_travel_2893.
 ENDCLASS.
 
 
